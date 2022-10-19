@@ -7,7 +7,7 @@ const validatorCreateItem = [
     check('gender').exists().notEmpty().isLength({ min: 1, max: 1 }),
     check('dpi').exists().notEmpty().isLength({ min: 13, max: 13 }),
     check('address').exists().notEmpty(),
-    check('nit').exists().notEmpty().isLength({ min: 9, max: 9 }),
+    check('nit').exists().notEmpty().isLength({ min: 8, max: 9 }),
     check('phone').exists().notEmpty().isLength({ min: 8, max: 8 }),
     (req, res, next) => {
         return validateResults(req, res, next)
